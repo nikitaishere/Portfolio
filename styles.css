@@ -253,25 +253,25 @@ body {
     left: 0;
 }
 
-/* Impact Section */
-.impact {
+/* Update the projects section styles */
+.projects {
     padding: 6rem 0;
     background: var(--light-background);
 }
 
-.impact h2 {
+.projects h2 {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 3rem;
 }
 
-.impact-grid {
+.projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
 }
 
-.impact-card {
+.project-card {
     background: var(--background);
     border-radius: 10px;
     overflow: hidden;
@@ -279,32 +279,55 @@ body {
     transition: var(--transition);
 }
 
-.impact-card:hover {
+.project-card:hover {
     transform: translateY(-5px);
 }
 
-.impact-card img {
+.project-card img {
     width: 100%;
     height: 200px;
     object-fit: cover;
 }
 
-.impact-card h3 {
+.project-card h3 {
     padding: 1.5rem 1.5rem 0.5rem;
     font-size: 1.5rem;
+    color: var(--text-color);
 }
 
-.impact-card p {
+.project-card p {
     padding: 0 1.5rem 1.5rem;
     color: var(--light-text);
+    margin: 0;
 }
 
-.impact-details {
+.tech-stack {
     padding: 0 1.5rem 1.5rem;
     display: flex;
-    justify-content: space-between;
-    color: var(--primary-color);
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.tech-stack span {
+    background: var(--primary-color);
+    color: white;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
     font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+/* Remove the impact section styles */
+.impact {
+    display: none;
+}
+
+.impact-grid {
+    display: none;
+}
+
+.impact-card {
+    display: none;
 }
 
 /* Contact Section */
